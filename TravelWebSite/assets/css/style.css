@@ -882,6 +882,9 @@ input{
         flex-direction: row;
         column-gap: 1rem;
     }
+    .nav__link{
+        color: var(--white-color);
+    }
     .nav__toggle{
         display: none;
     }
@@ -891,7 +894,9 @@ input{
     .nav__dark{
         position: relative;
         top: 0;
-        
+    }
+    .nav__dark i{
+        color: var(--white-color);
     }
     .nav__dark span{
         display: none;

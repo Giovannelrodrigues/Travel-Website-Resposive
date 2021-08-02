@@ -95,7 +95,14 @@ window.addEventListener('scroll', scrollUp)
 
 const $html = document.querySelector('html')
 const iconTheme = document.querySelector('.ri-moon-fill')
-
+let cont = 0
 iconTheme.addEventListener('click', () =>{
     $html.classList.toggle('dark-mode')
+    if(cont % 2 == 0){
+        iconTheme.style.color = "hsl(var(--hue-color), 8%, 60%)"
+        cont ++
+    }else{
+        iconTheme.style.color = "hsl(var(--white-color))"
+    }
+    
 }) 
